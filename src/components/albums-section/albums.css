@@ -1,0 +1,23 @@
+
+#albums{
+    background-color: rgb(29, 29, 29);
+    width:100%;
+    padding: 1.9vw;
+    margin-top: 0.5vw;
+    padding-bottom: 5vw;
+    border-bottom: dotted rgba(255, 255, 255, 0.242) 0.01vw;
+}
+#albums h2{
+    display: inline;
+    color: aliceblue;
+    font-size: 1.8vw;
+}
+
+#albums h4{
+    float: right;
+    font-size: 1vw;
+    display: inline;
+}
+
+
+
