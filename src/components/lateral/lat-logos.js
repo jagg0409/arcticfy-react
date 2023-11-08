@@ -1,8 +1,8 @@
 import home from '../img/home_64.png'
-import lupa from '../img/search.ico'
+import lupa from '../img/search_64.png'
 import poster from '../img/random.ico'
 import mas from '../img/plus.ico'
-import like from '../img/like.ico'
+import like from '../img/like_64.png'
 import am from '../img/am.ico'
 import { Link } from 'react-router-dom'
 

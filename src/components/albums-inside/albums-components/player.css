@@ -53,6 +53,7 @@
     background: linear-gradient(to right, #5232c1, #12ccd0);
     border-radius: 0.4vw;
   } */
+
 .player-progress input {
     -webkit-appearance: none;
     width: 100%;
@@ -149,16 +150,15 @@
     width: 7vw;
     z-index: 1;
     transform: rotate(270deg);
-    margin: 0.4vw;
+    margin-left: 0.5vw;
 }
 
 .player-buttons .dropdown-content input {
-    box-shadow: 0vw 0vw 0.2vw #292929, -0vw -0vw 0.2vw #000000;
     -webkit-appearance: none;
     width: 80%;
     height: 0.5vw;
     border-radius: 0.4vw;
-    background: #cdd2d7;
+    background: #000000 ;
     outline: none;
     overflow: hidden;
 }
@@ -166,11 +166,11 @@
 .player-buttons .dropdown-content input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 0.6vw;
-    height: 0.6vw;
+    width: 0.5vw;
+    height: 0.5vw;
     border-radius: 50%;
     background: rgb(0, 0, 0);
-    box-shadow: -40.4vw 0 0 40vw #291c33;
+    box-shadow: -40.4vw 0 0 40vw #4d3461;
     cursor: pointer;
 }
 
