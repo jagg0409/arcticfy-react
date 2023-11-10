@@ -9,13 +9,13 @@ const AlbumInside = (props) => {
 
   const tracks = [
       {
-        url: "https://arcticfy-react.vercel.app/audio/Arabella.mp3",
-        title: `Arctic monkeys - Chords of Life`,
+        url: "https://arcticfy-react.vercel.app/Arabella.mp3",
+        title: `Arctic monkeys - Arabella`,
         tags: ["house"],
       },
       {
-        url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-        title: `Arctic monkeys - Late Night Drive`,
+        url: "https://audioplayer.madza.dev/bodypaint.mp3",
+        title: `Arctic monkeys - bodypaint`,
         tags: ["dnb"],
       },
       {
