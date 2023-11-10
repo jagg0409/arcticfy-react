@@ -1,15 +1,15 @@
 import './album-style.css'
 import './albums-components/player.css'
-import InfoSong from './albums-components/infoSongs'
-import PlayerButtons from './albums-components/playerButons'
-import PlayerProgress from './albums-components/playerProgres'
-import AudioPlayer from '../audio-player-master/audio-player-master/src/audioplayer'
-import '../audio-player-master/audio-player-master/src/audio/Arabella.mp3'
 
-const AlbumInside = (props) => {        
+import AudioPlayer from '../audio-player-master/audio-player-master/src/audioplayer'
+import Arabella from '../audio-player-master/audio-player-master/src/audio/Arabella.mp3'
+
+const AlbumInside = (props) => {   
+  
+  const Arabell= new Audio(require('../audio-player-master/audio-player-master/src/audio/Arabella.mp3'))
   const tracks = [
       {
-        url: "http://localhost:3000/arcticfy\src\components\audio-player-master\audio-player-master\src\audio",
+        url: "https://arcticfy-react.vercel.app/audio/Arabella.mp3",
         title: `Arctic monkeys - Chords of Life`,
         tags: ["house"],
       },
@@ -22,7 +22,7 @@ const AlbumInside = (props) => {
         url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
         title: `Arctic monkeys -ñañ`,
         tags: ["dubstep"],
-      },
+      }, 
     ];
     
 
