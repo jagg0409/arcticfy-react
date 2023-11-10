@@ -1,12 +1,12 @@
 import './album-style.css'
 import './albums-components/player.css'
 
-import AudioPlayer from '../audio-player-master/audio-player-master/src/audioplayer'
-import Arabella from '../audio-player-master/audio-player-master/src/audio/Arabella.mp3'
+import AudioPlayer from '../audio-player-master/src/audioplayer'
+
 
 const AlbumInside = (props) => {   
   
-  const Arabell= new Audio(require('../audio-player-master/audio-player-master/src/audio/Arabella.mp3'))
+
   const tracks = [
       {
         url: "https://arcticfy-react.vercel.app/audio/Arabella.mp3",
