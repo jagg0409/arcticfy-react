@@ -1,7 +1,4 @@
-const tags = [
-    'arabella',
 
-]
 
 const tracks = [
     {
