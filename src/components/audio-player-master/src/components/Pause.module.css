@@ -1,6 +1,6 @@
 .pause {
-  width: 60px;
-  height: 60px;
+  width: 4vw;
+  height: 4vw;
   transition: transform 0.2s;
 }
 

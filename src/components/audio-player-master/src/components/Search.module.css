@@ -4,15 +4,15 @@
 
 .search {
   font-family: 'Quicksand', sans-serif;
-  height: 40px;
+  height: 2.667vw;
   border: none;
-  font-size: 18px;
+  font-size: 1.2vw;
   width: 100%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0.667vw auto;
   background-color: var(--searchBackground);
   color: var(--searchText);
-  padding-left: 20px;
-  border-radius: 10px;
+  padding-left: 1.333vw;
+  border-radius: 0.667vw;
 }
 
 .search::placeholder {

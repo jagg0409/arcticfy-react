@@ -1,30 +1,30 @@
 .wrapper {
   width: 100%;
-  margin: 20px auto 20px auto;
-  max-height: 425px;
-  min-height: 120px;
+  margin: 1.333vw auto 1.333vw auto;
+  max-height: 28.333vw;
+  min-height: 8vw;
   overflow-x: hidden;
-  padding-right: 10px;
+  padding-right: 0.667vw;
   font-family: "Quicksand", sans-serif;
 }
 
 /* width */
 .wrapper::-webkit-scrollbar {
-  width: 5px;
+  width: 0.333vw;
 }
 
 /* Track */
 .wrapper::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: 0.667vw;
 }
 
 /* Handle */
 .wrapper::-webkit-scrollbar-thumb {
   background: var(--primaryText);
-  border-radius: 10px;
+  border-radius: 0.667vw;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 51.2vw) {
   .wrapper {
     width: 90%;
   }

@@ -2,14 +2,15 @@
   display: grid;
   place-items: center;
   width: 100%;
-  min-height: 60px;
+  min-height: 4vw;
+  margin-top: 2vw;
 }
 
 .slider {
   -webkit-appearance: none;
   width: 70%;
-  height: 3px;
-  border-radius: 5px;
+  height: 0.2vw;
+  border-radius: 0.333vw;
   background: var(--volumeSlider);
   outline: none;
   opacity: 1;
@@ -20,8 +21,8 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 1.333vw;
+  height: 1.333vw;
   border-radius: 50%;
   background: var(--volumeSlider);
   cursor: pointer;
@@ -32,15 +33,16 @@
 }
 
 .slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 1.333vw;
+  height: 1.333vw;
   border-radius: 50%;
   background: var(--volumeSlider);
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 53.333vw) {
   .wrapper {
     display: none;
   }
+
 }

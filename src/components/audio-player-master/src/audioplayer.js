@@ -32,25 +32,25 @@ import shuffleNoneBtn from "./icons/shuffle_none.png";
 
 const colors = `html{
     --tagsBackground: #9440f3;
-    --tagsText: #ffffff;
-    --tagsBackgroundHoverActive: #2cc0a0;
-    --tagsTextHoverActive: #ffffff;
+    --tagsText: #00000094;
+    --tagsBackgroundHoverActive: #2a5cc773;
+    --tagsTextHoverActive: #ffffff94;
     --searchBackground: #18191f;
-    --searchText: #ffffff;
+    --searchText: #ffffff94;
     --searchPlaceHolder: #575a77;
     --playerBackground: #18191f;
-    --titleColor: #ffffff;
-    --timeColor: #ffffff;
+    --titleColor: #ffffff94;
+    --timeColor: #ffffff94;
     --progressSlider: #9440f3;
-    --progressUsed: #ffffff;
+    --progressUsed: #ffffff94;
     --progressLeft: #151616;
     --volumeSlider: #9440f3;
-    --volumeUsed: #ffffff;
+    --volumeUsed: #ffffff94;
     --volumeLeft:  #151616;
     --playlistBackground: #18191f;
     --playlistText: #575a77;
     --playlistBackgroundHoverActive:  #18191f;
-    --playlistTextHoverActive: #ffffff;
+    --playlistTextHoverActive: #ffffff94;
   }`;
 
 const AudioPlayer = ({

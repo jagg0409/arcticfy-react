@@ -3,11 +3,11 @@
   color: var(--playlistText);
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: 16px;
-  margin: 5px 0;
-  padding: 3px 0;
+  font-size: 1.067vw;
+  margin: 0.333vw 0;
+  padding: 0.2vw 0;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.333vw;
 }
 
 .track:first-child {
@@ -18,12 +18,12 @@
   background-color: var(--playlistBackground);
   color: var(--playlistTextHoverActive);
   text-align: center;
-  font-size: 18px;
-  margin: 5px 0;
-  padding: 3px 0;
+  font-size: 1.2vw;
+  margin: 0.333vw 0;
+  padding: 0.2vw 0;
   cursor: pointer;
 
-  border-radius: 5px;
+  border-radius: 0.333vw;
 }
 
 .active:first-child {
@@ -33,5 +33,5 @@
 .track:hover {
   background-color: var(--playlistBackground);
   color: var(--playlistTextHoverActive);
-  border-radius: 5px;
+  border-radius: 0.333vw;
 }

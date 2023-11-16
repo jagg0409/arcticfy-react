@@ -1,6 +1,6 @@
 import styles from './Volume.module.css'
 import React from 'react'
-
+import volume from '../../../img/volume.png'
 const Volume = (props) => {
   return (
     <div className={styles.wrapper}>
@@ -18,6 +18,7 @@ const Volume = (props) => {
           }%, var(--volumeLeft) ${props.value * 100}%)`
         }}
       />
+        <img src={volume} alt="volume" className='volume-ico'/>
     </div>
   )
 }

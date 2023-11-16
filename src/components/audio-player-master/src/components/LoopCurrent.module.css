@@ -1,6 +1,6 @@
 .loop_current {
-  width: 26px;
-  height: 26px;
+  width: 1.733vw;
+  height: 1.733vw;
   transition: transform 0.2s;
 }
 
@@ -9,7 +9,7 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 40vw) {
   .loop_current {
     display: none;
   }

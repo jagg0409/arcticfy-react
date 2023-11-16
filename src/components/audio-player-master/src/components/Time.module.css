@@ -2,11 +2,11 @@
   font-family: 'Varela Round', sans-serif;
   color: var(--timeColor);
   text-align: right;
-  font-size: 30px;
+  font-size: 2vw;
   margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 40vw) {
   .time {
     width: 100%;
     margin: 0 auto;

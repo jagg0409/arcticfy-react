@@ -1,27 +1,26 @@
-import './album-style.css'
-import './albums-components/player.css'
 
 import AudioPlayer from '../audio-player-master/src/audioplayer'
 
+import './Albumstyle.css'
 
 const AlbumInside = (props) => {   
   
-
+  const noSpace = (name) =>  name.split(" ").join("");
   const tracks = [
       {
-        url: "https://arcticfy-react.vercel.app/Arabella.mp3",
-        title: `Arctic monkeys - Arabella`,
-        tags: ["house"],
+        url: `https://arcticfy-react.vercel.app/${noSpace(props.song1)}.mp3`,
+        title: `${props.name} - ${props.song1}`,
+        tags: [props.song1],
       },
       {
-        url: "https://audioplayer.madza.dev/bodypaint.mp3",
-        title: `Arctic monkeys - bodypaint`,
-        tags: ["dnb"],
+        url: `https://arcticfy-react.vercel.app/${noSpace(props.song2)}.mp3`,
+        title: `${props.name} - ${props.song2}`,
+        tags: [props.song2],
       },
       {
-        url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-        title: `Arctic monkeys -ñañ`,
-        tags: ["dubstep"],
+        url: `https://arcticfy-react.vercel.app/${noSpace(props.song3)}.mp3`,
+        title: `${props.name} - ${props.song3}`,
+        tags: [props.song3],
       }, 
     ];
     

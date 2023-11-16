@@ -22,7 +22,7 @@ const Logoslat = () =>{
         </Link>
 
         <br/><br/>
-        <Link to='/play'>
+        <Link to='/playlist'>
             <div className='logos'> <img src={mas} /> playlist</div>
         </Link>
         <Link to='/likes'>

@@ -1,19 +1,28 @@
 import { Routes, Route } from "react-router-dom"
 import AlbumInside from "./AlbumsInside"
 import SingleInside from "./SingleInside"
-import music from './albums-components/music'
+
 
 const RenderAlbum = () => {
+ 
+
+  
 
   return (
     <div>
 
       <Routes>
 
+
+
         <Route exact path={`/thecar`} element={
           <div>
-            <AlbumInside name='thecar' />
-            <script src={music}></script>
+            <AlbumInside name='the car' 
+            song1={'arabella'}
+            song2={'body paint'}
+            song3={'pretty visitors'}
+            />
+            
           </div>
         } />
 
@@ -28,6 +37,11 @@ const RenderAlbum = () => {
             <AlbumInside name='tranquility base' />
           </div>
         } />
+
+
+
+
+
 
         <Route exact path={`/body paint`} element={
           <div>
