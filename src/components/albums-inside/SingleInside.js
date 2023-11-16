@@ -2,13 +2,12 @@ import AudioPlayer from '../audio-player-master/src/audioplayer'
 import './SingleStyle.css'
 
 const SingleInside = (props) => {
-    const song = props.name.split(" ").join("");
 
 
     const tracks = [
 
         {
-            url: `https://arcticfy-react.vercel.app/${song}.mp3`,
+            url: `https://arcticfy-react.vercel.app/${props.name}.mp3`,
             title: `Arctic monkeys - ${props.name}`,
             tags: [props.name],
         },

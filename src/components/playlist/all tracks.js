@@ -5,12 +5,12 @@ const tags = [
 
 const tracks = [
     {
-        url: `https://arcticfy-react.vercel.app/Arabella.mp3`,
+        url: `https://arcticfy-react.vercel.app/arabella.mp3`,
         title: `arctic monkeys - arabella`,
-        tags: [tags.arabella],
+        tags: ['arabella'],
     },
     {
-        url: `https://arcticfy-react.vercel.app/bodypaint.mp3`,
+        url: `https://arcticfy-react.vercel.app/body paint.mp3`,
         title: `arctic monkeys - bodypaint`,
         tags: ['bodypaint'],
     },
