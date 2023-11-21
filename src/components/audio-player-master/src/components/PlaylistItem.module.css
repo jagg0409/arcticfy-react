@@ -35,3 +35,13 @@
   color: var(--playlistTextHoverActive);
   border-radius: 0.333vw;
 }
+
+
+@media (max-width:1000px){
+  .track{
+    font-size: 2.5vw;
+  }
+  .active{
+    font-size: 2.5vw;
+  }
+}

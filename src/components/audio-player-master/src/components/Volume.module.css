@@ -54,3 +54,15 @@
   width: 2.5vw;
   height: 2.5vw;
 }
+@media (max-width:1000px){
+  .volume{
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+  .slider{
+    height: 0.5vw;
+  }
+  .wrapper{
+    margin-top: 2vw;
+  }
+}

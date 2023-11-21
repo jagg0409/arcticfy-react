@@ -42,4 +42,14 @@
   .container {
     margin: 2.667vw 0;
   }
+
+}
+
+@media (max-width:1000px){
+  .slider{
+    height: 0.5vw;
+  }
+  .container{
+    margin-bottom: 3vw;
+  }
 }

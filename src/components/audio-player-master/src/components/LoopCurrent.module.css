@@ -14,3 +14,8 @@
     display: none;
   }
 }
+@media (max-width:1000px){
+  .loop_current{
+    width: 3vw;
+    height: 3vw;  }
+}

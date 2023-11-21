@@ -28,3 +28,10 @@
 .search::-ms-input-placeholder {
   color: var(--searchPlaceHolder);
 }
+
+@media (max-width:1000px){
+  .search{
+    font-size: 2vw;
+    padding: 1vw;
+  }
+}

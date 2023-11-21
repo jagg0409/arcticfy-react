@@ -35,3 +35,15 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+@media (max-width:1000px){
+  .tag{
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .active{
+    font-size: 2vw;
+    padding: 1vw;
+  
+  }
+}
+

@@ -13,3 +13,8 @@
     display: none;
   }
 }
+@media (max-width:1000px){
+  .time{
+    font-size: 3vw;
+  }
+}

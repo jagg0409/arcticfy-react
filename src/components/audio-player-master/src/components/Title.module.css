@@ -11,3 +11,8 @@
     text-align: center;
   }
 }
+@media (max-width:1000px){
+  .title{
+    font-size: 3vw;
+  }
+}

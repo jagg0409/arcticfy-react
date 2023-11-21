@@ -12,3 +12,8 @@
     text-align: center;
   }
 }
+@media (max-width:1000px){
+  .wrapper{
+    font-size: 3vw;
+  }
+}

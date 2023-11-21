@@ -31,7 +31,7 @@ import shuffleAllBtn from "./icons/shuffle_all.png";
 import shuffleNoneBtn from "./icons/shuffle_none.png";
 
 const colors = `html{
-    --tagsBackground: #9440f3;
+    --tagsBackground: #9b4cf588;
     --tagsText: #00000094;
     --tagsBackgroundHoverActive: #2a5cc773;
     --tagsTextHoverActive: #ffffff94;
@@ -41,11 +41,11 @@ const colors = `html{
     --playerBackground: #18191f;
     --titleColor: #ffffff94;
     --timeColor: #ffffff94;
-    --progressSlider: #9440f3;
-    --progressUsed: #ffffff94;
+    --progressSlider: #4e1a8a;
+    --progressUsed: #5380d481;
     --progressLeft: #151616;
-    --volumeSlider: #9440f3;
-    --volumeUsed: #ffffff94;
+    --volumeSlider: #4e1a8a;
+    --volumeUsed: #5380d481;
     --volumeLeft:  #151616;
     --playlistBackground: #18191f;
     --playlistText: #575a77;
