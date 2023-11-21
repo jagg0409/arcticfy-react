@@ -6,7 +6,7 @@ import Portada from './portada'
 const Albums = (props) => {
     return (
             <article id="albums">
-                <Link to={`/${props.children}`}>
+                <Link to={`/${props.children}#up`} >
                     <h2>{props.children}</h2>
                     <h4>SHOW ALL</h4>
                 </Link>

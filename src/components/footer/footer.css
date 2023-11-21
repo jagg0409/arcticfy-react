@@ -2,11 +2,11 @@
     float: left;
     position:relative;
     font-size: 1vw;
-    width: 107.5%;
+    width: 107.6%;
     background-color: rgb(20, 20, 20);
     color: white;
     padding-top: 3vw;
-    bottom: 0;
+    margin-bottom: 0;
 }
 
 #footer h4 {

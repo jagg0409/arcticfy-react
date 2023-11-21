@@ -9,7 +9,13 @@
     color: aliceblue;
     overflow: hidden;
     z-index: 10;
-    margin-left: 17%;
+    margin-left: 18vw;
+}
+@media (max-width:1000px){
+    #up{
+        margin-left: 9vw;
+        width: 91%;
+    }
 }
 
 #line {

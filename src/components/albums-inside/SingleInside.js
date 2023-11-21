@@ -1,9 +1,11 @@
 import AudioPlayer from '../audio-player-master/src/audioplayer'
 import './SingleStyle.css'
 
+
 const SingleInside = (props) => {
 const lala = props.name
 console.log('la ptm')
+const albumImg = require.context('../img', true)
 const tracks = [
     
     {
@@ -17,13 +19,16 @@ return (
         <div id="barras-audio">
             <div class="container-music">
                 <div class="player-single">
+                    <img src={albumImg(`./${props.name}.jpg`)} alt="" className='portada'/>
                     <AudioPlayer
                         trackList={tracks}
                         includeTags={false}
                         includeSearch={false}
                         showPlaylist={false}
                         autoPlayNextTrack={false}
-                        ></AudioPlayer>
+                        >
+
+                        </AudioPlayer>
                 </div>
             </div>
         </div>

@@ -1,19 +1,46 @@
 :root{
     --color-links:rgba(240, 248, 255, 0.521);
-    --color-hover-links: rgba(185, 158, 232, 0.521);
+    --color-hover-links: rgba(141, 88, 233, 0.521);
 }
 .lat {
     text-align: justify;
     background-color: black;
     color: aliceblue;
-    height: 100%;
+    height:100%;
     width: 15vw;
     position:fixed;
     padding-top: 2%;
     padding-left: 2%;
     padding-right: 2%;
   }
-  
+  @media (max-width:1000px) {
+    .lat{
+      text-align: justify;
+      background-color: rgb(0, 0, 0);
+      color: aliceblue;
+      width: 5vw;
+      text-transform: none;
+      position:fixed;
+      padding-top: 2%;
+      padding-left: 2%;
+      padding-right: 2%;
+      overflow: hidden;
+    }
+    .logos {
+      vertical-align: middle;
+      font-size: 1.3vw;
+      overflow: hidden;
+      color: rgba(240, 248, 255, 0);
+    }
+    .logos img {
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+  }
+    .logo{
+    color: rgba(240, 248, 255, 0);
+    }
+    
+  }
   .logo {
     vertical-align: middle;
     margin-bottom: 4vw;
@@ -22,16 +49,19 @@
   }
   
   .logo img {
-    width: 26%;
+    width: 5vw;
     vertical-align: middle;
     margin-right: 4%;
   }
   
-  a {
+  a{
     text-decoration: none;
     color: var(--color-links) ;
     text-transform: capitalize;
-    
+    transition: 0.4s;
+  }
+  a:hover {
+    color: var(--color-hover-links);
   }
   
   .logos {
@@ -39,14 +69,9 @@
     margin-bottom: 10%;
     font-size: 1.3vw;
   }
-  a:hover{
-    color: var(--color-hover-links) ;
-  }
-  a:hover>.logos img{
-    filter:drop-shadow(0.2vw 0.35vw 0.2vw rgb(103, 29, 232));
-  }
+
   .logos img {
-    width: 18%;
+    width: 3vw;
     vertical-align: middle;
     margin-right: 7%;
   }
@@ -58,7 +83,7 @@
     font-size: 1vw;
     color: var(--color-links); 
     position: fixed;
-    bottom: 0;
     margin: 2vw;
+    bottom: 0;
   }
   

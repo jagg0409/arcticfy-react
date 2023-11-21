@@ -6,7 +6,12 @@
     margin-top: 0.5vw;
     padding-bottom: 5vw;
     border-bottom: dotted rgba(255, 255, 255, 0.242) 0.01vw;
+}@media (max-width:1000px){
+    #albums{
+        height: 40vw;
+    }
 }
+
 #albums h2{
     display: inline;
     color: aliceblue;

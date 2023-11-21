@@ -5,7 +5,7 @@ const  Latfoot = () =>{
     <div className='footlat'> 
          <Link to="/legal"> legal</Link>   
             <Link to="/privacidad">privacy </Link>
-            <Link to="cookies">cookies</Link>
+            <Link to="cookies"> cookies</Link>
         </div>
     )
 }

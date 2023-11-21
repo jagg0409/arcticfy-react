@@ -35,6 +35,7 @@
            0 0 2em .5em var(--glow-spread-color),
            inset 0 0 .75em .25em var(--glow-color);
     float: right;
+    margin-top: 3vw;
 }
 .container-music {
     display: flex;
@@ -55,9 +56,11 @@
     padding: 5vw;
     padding-right: 10vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
+
+
+
 .Previous_previous__b8Tsx{
     width: 3vw;
   }
@@ -65,7 +68,9 @@
   .Next_next__03SFE{
     width: 3vw;
   }
-
+  .Title_title__xRNbL{
+    margin-top: 1vw;
+  }
 
 
 

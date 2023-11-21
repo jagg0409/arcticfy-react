@@ -19,10 +19,17 @@ body::-webkit-scrollbar-thumb{
 }
 main {
   padding-top: 6vw;
-  width: 75vw;
+  width:75%;
   padding-left: 19vw;
   margin-right: 0%;
 }
+@media (max-width:1000px){
+  main{
+    padding-left: 9vw;
+    width: 84.5%;
+  }
+}
 #root{
   width: 100%;
+  padding: 0%;
 }

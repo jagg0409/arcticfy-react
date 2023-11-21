@@ -4,6 +4,7 @@ import volume from '../../../img/volume.png'
 const Volume = (props) => {
   return (
     <div className={styles.wrapper}>
+      <img className={styles.volume} src={volume} alt="volume" />
       <input
         type='range'
         min='1'
@@ -18,7 +19,6 @@ const Volume = (props) => {
           }%, var(--volumeLeft) ${props.value * 100}%)`
         }}
       />
-        <img src={volume} alt="volume" className='volume-ico'/>
     </div>
   )
 }

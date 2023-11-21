@@ -6,7 +6,7 @@ const Lateral = () =>{
     return(
     <div className='lat'>
             <Logoslat/>
-        <Latfoot/>
+            <Latfoot/>
     </div>
     )
 }

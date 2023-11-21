@@ -14,7 +14,7 @@ const Logoslat = () =>{
         <Link to='/'>
             <div className='logos'> <img src={home} />home</div>
         </Link>
-        <Link to='/buscar'>
+        <Link to='/search'>
             <div className='logos'> <img src={lupa} />search</div>
         </Link>
         <Link to='/posters'>
