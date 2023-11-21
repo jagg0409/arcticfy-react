@@ -87,9 +87,9 @@
   #barras-audio{
       width: 83vw;
   }
-  .player{
+  .player-single{
     font-size: 3vw;
-    scale: 1.1;
+    scale: 1.08;
   }
   .PlaylistTemplate_wrapper__GTmav > *{
     font-size: 2vw;
