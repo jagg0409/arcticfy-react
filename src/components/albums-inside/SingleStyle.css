@@ -22,11 +22,7 @@
   font-size: 1vw;
   color: rgb(0, 0, 0);
 }
-@media (max-width:1000px){
-  #barras-audio{
-      width: 80vw;
-  }
-}
+
 
 
 #album {
@@ -87,4 +83,27 @@
             -0vw 0.1vw 0.2vw #000000;
 }
 
+@media (max-width:1000px){
+  #barras-audio{
+      width: 83vw;
+  }
+  .player{
+    font-size: 3vw;
+    scale: 1.1;
+  }
+  .PlaylistTemplate_wrapper__GTmav > *{
+    font-size: 2vw;
+  }
+  .TagsTemplate_wrapper__MFb6Y   > *{
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .PlayerTemplate_wrapper__zSOij > * > *{
+    font-size: 2.5vw;
+  }
+  .Search_wrapper__A2V4A > *{
+    font-size: 2vw;
+  }
+
+}
 

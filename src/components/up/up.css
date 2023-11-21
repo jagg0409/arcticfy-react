@@ -11,12 +11,7 @@
     z-index: 10;
     margin-left: 18vw;
 }
-@media (max-width:1000px){
-    #up{
-        margin-left: 9vw;
-        width: 91%;
-    }
-}
+
 
 #line {
     vertical-align: middle;
@@ -85,4 +80,26 @@
 #arctic img {
     width: 3vw;
     margin-top: 12%;
+}
+@media (max-width:1000px){
+    #up{
+        margin-left: 9vw;
+        width: 91%; 
+        height: 7vw;
+        font-size: 2vw;
+    }
+    #arctic {
+       scale: 1.7;
+       margin-top: 1vw;
+    }
+    #up button {
+    scale: 1.4  ;
+    margin-top: 1vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    }
+    #line{
+        scale: 1.5;
+    }
+
 }

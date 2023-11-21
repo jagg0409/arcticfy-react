@@ -6,22 +6,31 @@
     margin-top: 0.5vw;
     padding-bottom: 5vw;
     border-bottom: dotted rgba(255, 255, 255, 0.242) 0.01vw;
-}@media (max-width:1000px){
-    #albums{
-        height: 40vw;
-    }
 }
 
 #albums h2{
     display: inline;
     color: aliceblue;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 #albums h4{
     float: right;
     font-size: 1vw;
     display: inline;
+}
+@media (max-width:1000px){
+    #albums{
+        height: 40vw;
+    }
+    
+#albums h2{
+    font-size: 3vw;
+}
+
+#albums h4{
+    font-size: 1.5vw;
+}
 }
 
 

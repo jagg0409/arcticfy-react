@@ -18,18 +18,6 @@
     
 }
 
-
-@media (max-width:1000px){
-    #portada{
-        width: 20vw;
-        height: 27vw;
-    }
-    #portada img{
-        width: 20vw;
-        height: 20vw;
-    }    
-}
-
 #portada img {
     
     width: 100%;
@@ -90,9 +78,13 @@ z-index: 2;
     margin-left: -1.5vw;
     position: absolute;
 }@media (max-width:1000px){
+    #portada{
+        width: 21vw;
+        height: 28vw;
+    }
     #portada:hover #anima{
-        width: 23vw;
-        height: 30vw;    
+        width: 24vw;
+        height: 31vw;    
         border-radius: 5px;
         overflow: hidden;
         margin-top: -1.5vw;
@@ -100,8 +92,11 @@ z-index: 2;
         position: absolute;
     }
     #portada:hover  #anima img{
-        margin-top: 22vw;
-        margin-right: 2vw;
+        margin-top: 23vw;
+        margin-right: 3vw;
         opacity: 100%;
+    }
+    #portada{
+        font-size: 1.6vw;
     }
 }

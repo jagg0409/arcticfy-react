@@ -30,7 +30,7 @@ const AlbumInside = (props) => {
         <div id="barras-audio">
             <div class="container-music">
                 <div class="player">
-                    <AudioPlayer trackList={tracks} ></AudioPlayer>
+                    <AudioPlayer trackList={tracks} id='audioplayer'></AudioPlayer>
                 </div>
             </div>
         </div>
