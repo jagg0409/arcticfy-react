@@ -15,7 +15,7 @@ return (
             <div class="container-music">
                 <div class="player-single">
                     <img src={albumImg(`./${props.name}.jpg`)} alt="" className='portada'/>
-                    <AudioPlayer
+                    <AudioPlayer 
                         trackList={filteredTracks}
                         includeTags={false}
                         includeSearch={false}

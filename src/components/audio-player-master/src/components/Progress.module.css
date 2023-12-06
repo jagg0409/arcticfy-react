@@ -6,7 +6,7 @@
 }
 
 .slider {
-  -webkit-appearance: none;
+appearance: none;
   width: 100%;
   height: 0.267vw;
   border-radius: 0.333vw;
@@ -14,13 +14,21 @@
   opacity: 1;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  animation: bumpAnimation 0.5s ease-in-out infinite alternate;
+}@keyframes bumpAnimation {
+  0% {
+    box-shadow: 0vw 0vw 0.7vw 0vw var(--volumeSlider);
+  }
+  100% {
+    box-shadow: 0vw 0vw 0.7vw 0.2vw var(--volumeSlider);
+  }
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.667vw;
-  height: 1.667vw;
+  width: 1.4vw;
+  height: 1.4vw;
   border-radius: 50%;
   background: var(--progressSlider);
   cursor: pointer;

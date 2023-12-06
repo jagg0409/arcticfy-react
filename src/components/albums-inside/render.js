@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
-import AlbumInside from "./AlbumsInside"
 import SingleInside from "./SingleInside"
+import AlbumInside from "./AlbumsInside"
 
 
 const RenderAlbum = () => {

@@ -175,17 +175,23 @@ ${customColorScheme}
 
   
   const previous = () => {
-    const index = playlist.indexOf(curTrack);
-    index !== 0
-    ? setCurTrack((curTrack = playlist[index - 1]))
-    : setCurTrack((curTrack = playlist[playlist.length - 1]));
+    if (playlist.length > 1){
+
+      const index = playlist.indexOf(curTrack);
+      index !== 0
+      ? setCurTrack((curTrack = playlist[index - 1]))
+      : setCurTrack((curTrack = playlist[playlist.length - 1]));
+    }
   };
   
   const next = () => {
-    const index = playlist.indexOf(curTrack);
-    index !== playlist.length - 1
-    ? setCurTrack((curTrack = playlist[index + 1]))
-    : setCurTrack((curTrack = playlist[0]));
+    if (playlist.length > 1){
+
+      const index = playlist.indexOf(curTrack);
+      index !== playlist.length - 1
+      ? setCurTrack((curTrack = playlist[index + 1]))
+      : setCurTrack((curTrack = playlist[0]));
+    }
   };
   
   const shuffle = () => {
@@ -282,7 +288,7 @@ ${customColorScheme}
         <div className={styles.buttons_volume_wrapper}>
           <ButtonsBox>
             <LoopCurrent
-              src={looped ? loopCurrentBtn : loopNoneBtn}
+              src={looped ? loopNoneBtn : loopCurrentBtn }
               onClick={loop}
             />
             <Previous src={previousBtn} onClick={previous} />
@@ -293,7 +299,7 @@ ${customColorScheme}
             )}
             <Next src={nextBtn} onClick={next} />
             <Shuffle
-              src={shuffled ? shuffleAllBtn : shuffleNoneBtn}
+              src={shuffled ? shuffleNoneBtn : shuffleAllBtn}
               onClick={shuffle}
             />
           </ButtonsBox>
