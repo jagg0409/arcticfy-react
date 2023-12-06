@@ -39,11 +39,12 @@
   .tag{
     font-size: 2vw;
     padding: 1vw;
+    font-weight: bold;
   }
   .active{
     font-size: 2vw;
     padding: 1vw;
-  
+    font-weight: bold;
   }
 }
 

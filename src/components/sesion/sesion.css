@@ -32,12 +32,12 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 4vw;
-    border-radius: 15px;
+    border-radius: 1vw;
     background: #6e6e6e;
-    -webkit-box-shadow: 15px 15px 40px #929292,
-        -15px -15px 40px #b6b6b6;
-    box-shadow: 15px 15px 40px #929292,
-        -15px -15px 40px #b6b6b6;
+    -webkit-box-shadow: 1vw 1vw 2.667vw #929292,
+        -1vw -1vw 2.667vw #b6b6b6;
+    box-shadow: 1vw 1vw 2.667vw #929292,
+        -1vw -1vw 2.667vw #b6b6b6;
     border-radius: 1vw;
     padding: 1vw;
     transition: 3s;
@@ -93,12 +93,11 @@
     -webkit-transform: translateX(10vw) translateY(-1.5vw);
     -ms-transform: translateX(10vw) translateY(-1.5vw);
     transform: translateX(10vw) translateY(-1.5vw);
-
-    padding: 5px 0.5vw;
+    padding: 1vw;
     background: #000;
     letter-spacing: 0.2em;
     color: #fff;
-    border: 2px;
+    border: 0.2vw;
 }
 
 .inputBox1 input:valid~span,
@@ -106,19 +105,18 @@
     -webkit-transform: translateX(10vw) translateY(-1.5vw);
     -ms-transform: translateX(10vw) translateY(-1.5vw);
     transform: translateX(10vw) translateY(-1.5vw);
-
-    padding: 5px 1vw;
+    padding: 1vw;
     background: #000;
     letter-spacing: 0.2em;
     color: #fff;
-    border: 2px;
+    border: 0.2vw;
 }
 
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox1 input:valid,
 .inputBox1 input:focus {
-    border: 2px solid #000;
+    border: 0.2vw solid #000;
     border-radius: 8px;
 }
 
@@ -147,7 +145,11 @@
         scale: 1.5;
         margin: 8vw;
     }
-    #card >* > *{
-        font-size: 1.5vw;
+    .enter{
+        font-size: 1.2vw;
+    }
+    .inputBox span,
+    .inputBox1 span{
+        font-size: 1.1vw;
     }
   }

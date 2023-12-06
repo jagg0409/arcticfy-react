@@ -12,11 +12,11 @@ const Formulario = (props) =>{
             <p class="singup">{props.children} </p>
             <div class="inputBox1">
                 <input type="text" required="required" id="email" name="email"/>
-                <span class="user">Email</span>
+                <span className="user">Email</span>
             </div>
     
     
-            <div class="inputBox">
+            <div className="inputBox">
                 <input type="password" required="required" id="pass" name="password"/>
                 <span>password</span>
             </div>
