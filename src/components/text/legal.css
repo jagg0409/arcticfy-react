@@ -1,0 +1,33 @@
+.containerTerms{
+    display: flex;
+    position: relative;
+    border: 0.3vw solid rgba(255, 255, 255, 0.171);
+    align-items: center;
+    padding: 2vw 4vw;
+    margin: 2vw 4vw 2vw 8vw;
+    border-radius: 2vw;
+    background-color: rgba(47, 9, 97, 0.11);
+}
+.textTerms{
+    white-space: pre-line;
+    border: solid rgba(240, 248, 255, 0.459) ;
+    padding: 2vw;
+    border-radius: 2vw;
+    background-color: rgba(240, 248, 255, 0.055);
+}
+.textTerms > h2{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1000px){
+    .textTerms > h2{
+        font-size: 4vw;
+    }
+    .containerTerms{
+        padding: 6vw 6vw;
+    }
+    .textTerms > P{
+        font-size: 3vw;
+    }
+}
+

@@ -87,5 +87,11 @@
     .logo{
     color: rgba(240, 248, 255, 0);
     }
-    
+    .footlat{
+      display: flex;
+      text-align: left;
+      font-size: 1.7vw;
+      margin-left: 0;
+      margin-bottom: 10vw;
+    }
   }

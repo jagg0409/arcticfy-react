@@ -1,4 +1,3 @@
-import { Route, Link, Routes } from 'react-router-dom'
 import './App.css';
 import Albums from './components/albums-section/albums';
 import Footer from './components/footer/footer';
@@ -6,25 +5,28 @@ import Lateral from './components/lateral/lateral';
 import Up from './components/up/up'
 import Sesion from './components/sesion/sesion';
 import RenderAlbum from './components/albums-inside/render';
-import { useEffect } from 'react';
 import Search from './components/search/search';
 import Posters from './components/posters/posters';
 import Playlist from './components/playlist/playlist';
 import ScrollToTop from './autoscroll';
+import Text from './components/text/legal';
+
 
 function App() {
+
   return (
     <div>
       <ScrollToTop />
+      
       <Up id='up'/>
       <Lateral />
       <main>
         <Sesion />
-
+        <Text/>
           
 
         <Playlist />
-        <RenderAlbum />
+        <RenderAlbum/>
         <Search />
         <Posters />
             <section>

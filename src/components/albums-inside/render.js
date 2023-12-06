@@ -4,9 +4,6 @@ import SingleInside from "./SingleInside"
 
 
 const RenderAlbum = () => {
- 
-
-  
 
   return (
     <div>
@@ -18,9 +15,6 @@ const RenderAlbum = () => {
         <Route exact path={`/thecar`} element={
           <div>
             <AlbumInside name='the car' 
-            song1={'arabella'}
-            song2={'body paint'}
-            song3={'pretty visitors'}
             />
             
           </div>

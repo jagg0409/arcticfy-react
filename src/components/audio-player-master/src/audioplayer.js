@@ -60,7 +60,7 @@ const AudioPlayer = ({
   showPlaylist = true,
   autoPlayNextTrack = true,
   customColorScheme = colors,
-}) => {
+}, props) => {
   const [query, updateQuery] = useState("");
 
   let playlist = [];
@@ -173,39 +173,32 @@ ${customColorScheme}
     setLooped(!looped);
   };
 
-  useEffect(() => {
-    if (audio != null) {
-      audio.src = trackList[curTrack].url;
-      setTitle(trackList[curTrack].title);
-      play();
-    }
-  }, [curTrack]);
-
+  
   const previous = () => {
     const index = playlist.indexOf(curTrack);
     index !== 0
-      ? setCurTrack((curTrack = playlist[index - 1]))
-      : setCurTrack((curTrack = playlist[playlist.length - 1]));
+    ? setCurTrack((curTrack = playlist[index - 1]))
+    : setCurTrack((curTrack = playlist[playlist.length - 1]));
   };
-
+  
   const next = () => {
     const index = playlist.indexOf(curTrack);
     index !== playlist.length - 1
-      ? setCurTrack((curTrack = playlist[index + 1]))
-      : setCurTrack((curTrack = playlist[0]));
+    ? setCurTrack((curTrack = playlist[index + 1]))
+    : setCurTrack((curTrack = playlist[0]));
   };
-
+  
   const shuffle = () => {
     setShuffled(!shuffled);
   };
-
+  
   const playlistItemClickHandler = (e) => {
     const num = Number(e.currentTarget.getAttribute("data-key"));
     const index = playlist.indexOf(num);
     setCurTrack((curTrack = playlist[index]));
     play();
   };
-
+  
   const isInitialFilter = useRef(true);
   useEffect(() => {
     if (isInitialFilter.current) {
@@ -216,7 +209,7 @@ ${customColorScheme}
       }
     }
   }, [filter]);
-
+  
   const tagClickHandler = (e) => {
     const tag = e.currentTarget.innerHTML;
     if (!filter.includes(tag)) {
@@ -226,7 +219,14 @@ ${customColorScheme}
       setFilter([...filteredArray]);
     }
   };
-
+  
+  useEffect(() => {
+    if (audio != null) {
+      audio.src = trackList[curTrack].url;
+      setTitle(trackList[curTrack].title);
+      play();
+    }
+  }, [trackList[curTrack].title]);
   return (
     <PageTemplate>
       <GlobalStyles />
@@ -253,8 +253,12 @@ ${customColorScheme}
           placeholder={`Search ${trackList.length} tracks...`}
         />
       )}
+
+
       <PlayerTemplate>
         <div className={styles.title_time_wrapper}>
+          
+          {/* error de update inicia */}
           <Title title={title} />
           <Time
             time={`${!time ? "0:00" : fmtMSS(time)}/${
@@ -272,6 +276,9 @@ ${customColorScheme}
           onMouseUp={play}
           onTouchEnd={play}
         />
+        {/* error de update termina */}
+
+
         <div className={styles.buttons_volume_wrapper}>
           <ButtonsBox>
             <LoopCurrent

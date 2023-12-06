@@ -1,19 +1,14 @@
 import AudioPlayer from '../audio-player-master/src/audioplayer'
+import tracks from '../playlist/all tracks';
 import './SingleStyle.css'
 
 
 const SingleInside = (props) => {
-const lala = props.name
-console.log('la ptm')
 const albumImg = require.context('../img', true)
-const tracks = [
-    
-    {
-        url: `https://arcticfy-react.vercel.app/${props.name}.mp3`,
-        title: `Arctic monkeys - ${props.name}`,
-        tags: [props.name],
-    },
-];
+const albumToFilterBy = props.name; 
+const filteredTracks = tracks.filter(track => track.tags && track.tags.includes(albumToFilterBy));
+
+console.log(filteredTracks)
 return (
 
         <div id="barras-audio">
@@ -21,13 +16,14 @@ return (
                 <div class="player-single">
                     <img src={albumImg(`./${props.name}.jpg`)} alt="" className='portada'/>
                     <AudioPlayer
-                        trackList={tracks}
+                        trackList={filteredTracks}
                         includeTags={false}
                         includeSearch={false}
                         showPlaylist={false}
                         autoPlayNextTrack={false}
+                        title={albumToFilterBy}
                         >
-
+                            
                         </AudioPlayer>
                 </div>
             </div>

@@ -71,15 +71,7 @@
   .Title_title__xRNbL{
     margin-top: 1vw;
   }
-  @media (max-width:1000px){
-    #barras-audio{
-        width: 83vw;
-    }
-    .player-single{
-      font-size: 3vw;
-      scale: 1.08;
-    }
-  }
+  
   
  
 
