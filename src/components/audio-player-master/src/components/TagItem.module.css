@@ -37,14 +37,14 @@
 }
 @media (max-width:1000px){
   .tag{
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 1vw;
-    font-weight: bold;
+    
   }
   .active{
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 1vw;
-    font-weight: bold;
+    
   }
 }
 

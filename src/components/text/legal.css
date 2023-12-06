@@ -6,14 +6,14 @@
     padding: 2vw 4vw;
     margin: 2vw 4vw 2vw 8vw;
     border-radius: 2vw;
-    background-color: rgba(47, 9, 97, 0.11);
+    background-color: rgba(68, 13, 139, 0.11);
 }
 .textTerms{
     white-space: pre-line;
-    border: solid rgba(240, 248, 255, 0.459) ;
+    border: solid rgba(240, 248, 255, 0.575) ;
     padding: 2vw;
     border-radius: 2vw;
-    background-color: rgba(240, 248, 255, 0.055);
+    background-color: rgba(240, 248, 255, 0.247);
 }
 .textTerms > h2{
     display: flex;
