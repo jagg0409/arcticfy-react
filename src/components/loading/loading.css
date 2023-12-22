@@ -1,0 +1,63 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: hinge 2s ;
+    animation-delay: 2.2s ;
+  }
+  
+  .loading-screen p {
+    font-size: 2vw;
+    color: #ffffff;
+  }
+  
+#arctic-load {
+    display:block;
+    margin-left: 4%;
+    
+}
+@keyframes hinge {
+    0% {
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+  
+    20% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+  
+    40%{
+      transform: rotate(40deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+  
+    100% {
+      transform: rotate(100deg) translateY(0);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+  }
+#arctic-load img {
+    width: 5vw;
+}
+@media (max-width:1000px){
+
+    #arctic-load {
+       scale: 4;
+
+    }
+  
+
+}
+  

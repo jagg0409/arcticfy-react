@@ -10,10 +10,21 @@ import Posters from './components/posters/posters';
 import Playlist from './components/playlist/playlist';
 import ScrollToTop from './autoscroll';
 import Text from './components/text/legal';
-
+import LoadingScreen from './components/loading/loading';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
+  // Simulate a delay (you can replace this with your actual loading logic)
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
 
+    return () => clearTimeout(loadingTimeout);
+  }, [location.pathname]);
   return (
     <div>
       <ScrollToTop />
@@ -37,6 +48,7 @@ function App() {
         <Footer />
 
       </main>
+      {isLoading && <LoadingScreen />}
     </div>
   );
 }

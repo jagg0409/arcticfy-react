@@ -1,0 +1,22 @@
+* {
+    --first-color: #466499ab;
+    --second-color: #823faf;
+}
+.loading-bar {
+    width: 100%;
+    height: 0.533vw;
+    background-color: var(--first-color);
+    border-radius: 0.667vw;
+    margin-top: 1vw;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color:var(--second-color);
+    transition: width 0.3s ease-in-out;
+    border-radius: 0.667vw;
+    box-shadow: 0 0 0.8em .25em var(--second-color),
+           0 0 2em .2em var(--second-color),
+           inset 0 0 0.2em .25em var(--second-color);
+        }
+        
