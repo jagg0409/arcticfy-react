@@ -83,7 +83,17 @@
     }
   }
  
-
+.playlist-text{
+  font-size: 2.5vw;
+  padding:1.5vw;
+  border-radius: 40px;
+  color: rgb(177, 177, 177);
+    background-color:  #0011ff09;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 2em .5em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    border: .5vw solid #8323c728;
+}
 
 
 

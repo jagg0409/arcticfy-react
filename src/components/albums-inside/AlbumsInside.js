@@ -10,6 +10,7 @@ const filteredTracks = tracks.filter(track => track.album && track.album.include
     return (
         
         <div id="barras-audio">
+            <p className="playlist-text">Crea tu playlist seleccionando las canciones abajo</p>  
             <div class="container-music">
                 <div class="player">
                     <AudioPlayer trackList={filteredTracks} id='audioplayer'></AudioPlayer>
